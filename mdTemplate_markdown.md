@@ -71,8 +71,10 @@ aaa
 
 ## 画像
 
-![画像テスト](./img/画像テスト.png)
+![画像jpg](./img/AdobeStock_489911657.jpeg){.image_w300}
 
 ### 画像2
 
-![画像テスト2](./img/PA230135.JPG)
+![画像png](./img/AdobeStock_491863380.png)
+
+pngとjpgが張り付けられることは確認した。
