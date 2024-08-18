@@ -1,3 +1,13 @@
+---
+html:
+  embed_local_images: true
+  embed_svg: true
+  offline: true
+  toc: true
+export_on_save:
+  html: true
+---
+
 # template markdown
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
@@ -10,6 +20,7 @@
     - [節](#節)
       - [項](#項)
   - [画像](#画像)
+    - [画像2](#画像2)
 
 <!-- /code_chunk_output -->
 
@@ -61,3 +72,7 @@ aaa
 ## 画像
 
 ![画像テスト](./img/画像テスト.png)
+
+### 画像2
+
+![画像テスト2](./img/PA230135.JPG)
