@@ -21,6 +21,7 @@ export_on_save:
       - [項](#項)
   - [画像](#画像)
     - [画像2](#画像2)
+    - [画像3](#画像3)
 
 <!-- /code_chunk_output -->
 
@@ -78,3 +79,15 @@ aaa
 ![画像png](./img/AdobeStock_491863380.png)
 
 pngとjpgが張り付けられることは確認した。
+
+### 画像3
+
+![drawio](./img/draw.drawio.png)
+
+複数ページを作成しても、参照されるのはページ1のみ。
+
+![drawio2](./img/draw2.drawio.png)
+
+drawio側を更新してもmarkdown側には即反映ではない？  
+⇒ プレビューに反映されないだけみたい。html出力には反映された。  
+⇒⇒ MPEを利用しているなら右上から更新すればいい  

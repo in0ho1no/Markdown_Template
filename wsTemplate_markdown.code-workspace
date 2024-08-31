@@ -34,5 +34,6 @@
 		"markdown-preview-enhanced.breakOnSingleNewLine": false,
 		"markdown-preview-enhanced.scrollSync": false,
 		"markdown-preview-enhanced.mathRenderingOption": "MathJax",
+		"markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": true
 	}
 }
