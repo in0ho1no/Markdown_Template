@@ -19,7 +19,7 @@
 		// markdown settings
 		"[markdown]": {
 			"editor.wordWrap":"on",
-			"editor.wordSeparators": "./\\()\"'-:,.;<>~!@# ○$%^&*|+=[]{}`~?．。，、（）「」［］｛｝《》てにをはがのともへでや",
+			"editor.wordSeparators": "./\\()\"'-:,.;<>~!@# ○$%^&*|+=[]{}`~?．。，、（）「」［］｛｝《》『』【】てにをはがのともへでや",
 			"editor.quickSuggestions": {
 				"other": true,
 				"comments": false,
