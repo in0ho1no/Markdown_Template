@@ -22,6 +22,7 @@ export_on_save:
   - [画像](#画像)
     - [画像2](#画像2)
     - [画像3](#画像3)
+    - [PlantUML](#plantuml)
 
 <!-- /code_chunk_output -->
 
@@ -91,3 +92,18 @@ pngとjpgが張り付けられることは確認した。
 drawio側を更新してもmarkdown側には即反映ではない？  
 ⇒ プレビューに反映されないだけみたい。html出力には反映された。  
 ⇒⇒ MPEを利用しているなら右上から更新すればいい  
+
+### PlantUML
+
+```plantuml
+@startuml
+hide empty description
+[*] --> State1
+State1 --> [*]
+State1 : this is a string
+State1 : this is another string
+
+State1 -> State2
+State2 --> [*]
+@enduml
+```

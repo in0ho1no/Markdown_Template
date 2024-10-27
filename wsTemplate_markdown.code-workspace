@@ -34,6 +34,7 @@
 		"markdown-preview-enhanced.breakOnSingleNewLine": false,
 		"markdown-preview-enhanced.scrollSync": false,
 		"markdown-preview-enhanced.mathRenderingOption": "MathJax",
-		"markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": true
+		"markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": true,
+		"markdown-preview-enhanced.plantumlJarPath":"C:/Users/${env:USERNAME}/.vscode/extensions/jebbs.plantuml-2.18.1/plantuml.jar"
 	}
 }
