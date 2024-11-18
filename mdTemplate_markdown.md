@@ -23,6 +23,7 @@ export_on_save:
     - [画像2](#画像2)
     - [画像3](#画像3)
     - [PlantUML](#plantuml)
+    - [Table](#table)
 
 <!-- /code_chunk_output -->
 
@@ -101,3 +102,12 @@ State1 -> State2
 State2 --> [*]
 @enduml
 ```
+
+---
+
+### Table
+
+| No. |  タイトル |
+| --- | --------: |
+| 1   | サンプル1 |
+| 2   | サンプル2 |
