@@ -30,6 +30,11 @@
 			"editor.padding.bottom": 250,
 		},
 
+		// 画像コピペ時の保存先指定
+		"markdown.copyFiles.destination": {
+			"**/*": "img/"
+		},
+		
 		// Markdown Preview Enhanced
 		"markdown-preview-enhanced.breakOnSingleNewLine": false,
 		"markdown-preview-enhanced.scrollSync": false,
