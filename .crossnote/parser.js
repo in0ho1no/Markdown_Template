@@ -69,6 +69,16 @@
       `,
     );
 
+    html_ = html_.replace(
+      /:::[rR][eE][sS][uU][lL][tT]([\w\W]+?):::/g, 
+      (whole, content) => `
+        \<p id="result"\>
+        🔴Result<br>
+        ${content}
+        \<\/p\>
+      `,
+    );
+
     return html_;
   },
 })
