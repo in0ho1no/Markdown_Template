@@ -23,6 +23,7 @@ export_on_save:
     - [画像2](#画像2)
     - [画像3](#画像3)
     - [PlantUML](#plantuml)
+    - [Mermaid](#mermaid)
     - [Table](#table)
 
 <!-- /code_chunk_output -->
@@ -105,6 +106,33 @@ State1 : this is another string
 State1 -> State2
 State2 --> [*]
 @enduml
+```
+
+---
+
+### Mermaid
+
+```mermaid
+flowchart TD
+  Start[開始] --> Check{確認する}
+  Check -->|Yes| Write[本文を書く]
+  Check -->|No| Review[構成を見直す]
+  Write --> Table[表を追加する]
+  Review --> Write
+  Table --> End[完了]
+```
+
+シーケンス図の例。
+
+```mermaid
+sequenceDiagram
+  participant User as User
+  participant Editor as VS Code
+  participant Preview as Preview
+
+  User->>Editor: Markdown を編集
+  Editor->>Preview: プレビュー更新
+  Preview-->>User: 図を表示
 ```
 
 ---
