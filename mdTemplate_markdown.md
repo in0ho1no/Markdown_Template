@@ -16,6 +16,7 @@ export_on_save:
 
 - [template markdown](#template-markdown)
   - [凡例](#凡例)
+    - [スニペット呼び出し](#スニペット呼び出し)
   - [章立て](#章立て)
     - [章立て2](#章立て2)
       - [項](#項)
@@ -23,6 +24,7 @@ export_on_save:
     - [画像2](#画像2)
     - [画像3](#画像3)
     - [PlantUML](#plantuml)
+    - [Mermaid](#mermaid)
     - [Table](#table)
 
 <!-- /code_chunk_output -->
@@ -32,32 +34,52 @@ export_on_save:
 本書内での記述例を示す。
 
 :::tip
-知っておくと便利な小技系
+補足的な小技や、知っていると作業しやすくなる内容を書く。
 :::
 
 :::info
-知っておいた方がよさそうな情報
+前提知識、仕様、背景などの共有情報を書く。
 :::
 
 :::note
-おまけ的なメモ・自分語り
+補足メモ、あとで見返したい気付き、雑多な記録を書く。
 :::
 
 :::warning
-極めてリスクの高い事例
+誤ると大きな影響が出る注意点や、避けるべき操作を書く。
 :::
 
 :::caution
-注意深く利用する必要のある事例
+扱いに注意が必要な手順や、条件付きで使う内容を書く。
 :::
 
 :::sample
-コマンドやコードのサンプル等
+コマンド、設定例、コード片などの記述例を書く。
 :::
 
 :::result
-コマンドやコードの実行結果
+コマンド実行結果、確認結果、出力例を書く。
 :::
+
+### スニペット呼び出し
+
+この環境でよく使う prefix は以下。
+
+| 用途 | prefix |
+| --- | --- |
+| Front Matter | mdfront |
+| Tip | mdtip |
+| Info | mdinfo |
+| Note | mdnote |
+| Warning | mdwarn |
+| Caution | mdcaution |
+| Sample | mdsample |
+| Result | mdresult |
+| Table | mdtable |
+| Image | mdimg |
+| PlantUML | mdpuml |
+| Mermaid flowchart | mdmermaid |
+| Mermaid sequence | mdseq |
 
 ## 章立て
 
@@ -105,6 +127,33 @@ State1 : this is another string
 State1 -> State2
 State2 --> [*]
 @enduml
+```
+
+---
+
+### Mermaid
+
+```mermaid
+flowchart TD
+  Start[開始] --> Check{確認する}
+  Check -->|Yes| Write[本文を書く]
+  Check -->|No| Review[構成を見直す]
+  Write --> Table[表を追加する]
+  Review --> Write
+  Table --> End[完了]
+```
+
+シーケンス図の例。
+
+```mermaid
+sequenceDiagram
+  participant User as User
+  participant Editor as VS Code
+  participant Preview as Preview
+
+  User->>Editor: Markdown を編集
+  Editor->>Preview: プレビュー更新
+  Preview-->>User: 図を表示
 ```
 
 ---

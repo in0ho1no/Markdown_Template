@@ -1,2 +1,7 @@
+# Markdown export artifacts
 /*.html
 /*.pdf
+
+# Windows metadata
+Thumbs.db
+Desktop.ini
