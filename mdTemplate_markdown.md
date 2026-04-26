@@ -16,6 +16,7 @@ export_on_save:
 
 - [template markdown](#template-markdown)
   - [凡例](#凡例)
+    - [スニペット呼び出し](#スニペット呼び出し)
   - [章立て](#章立て)
     - [章立て2](#章立て2)
       - [項](#項)
@@ -59,6 +60,26 @@ export_on_save:
 :::result
 コマンドやコードの実行結果
 :::
+
+### スニペット呼び出し
+
+この環境でよく使う prefix は以下。
+
+| 用途 | prefix |
+| --- | --- |
+| Front Matter | mdfront |
+| Tip | mdtip |
+| Info | mdinfo |
+| Note | mdnote |
+| Warning | mdwarn |
+| Caution | mdcaution |
+| Sample | mdsample |
+| Result | mdresult |
+| Table | mdtable |
+| Image | mdimg |
+| PlantUML | mdpuml |
+| Mermaid flowchart | mdmermaid |
+| Mermaid sequence | mdseq |
 
 ## 章立て
 

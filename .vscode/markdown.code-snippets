@@ -37,6 +37,36 @@
         ],
         "description": "Insert a note admonition block"
     },
+    "Admonition Info": {
+        "scope": "markdown",
+        "prefix": "mdinfo",
+        "body": [
+            ":::info",
+            "${1:message}",
+            ":::"
+        ],
+        "description": "Insert an info admonition block"
+    },
+    "Admonition Warning": {
+        "scope": "markdown",
+        "prefix": "mdwarn",
+        "body": [
+            ":::warning",
+            "${1:message}",
+            ":::"
+        ],
+        "description": "Insert a warning admonition block"
+    },
+    "Admonition Caution": {
+        "scope": "markdown",
+        "prefix": "mdcaution",
+        "body": [
+            ":::caution",
+            "${1:message}",
+            ":::"
+        ],
+        "description": "Insert a caution admonition block"
+    },
     "Code Sample Block": {
         "scope": "markdown",
         "prefix": "mdsample",
