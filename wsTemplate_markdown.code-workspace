@@ -17,8 +17,12 @@
 		"editor.fontFamily": "Consolas, 'Meiryo UI','Courier New', monospace",
 
 		// markdown settings
+		"markdown.updateLinksOnFileMove.enabled": "always",
+		"markdown.validate.enabled": true,
+		"markdown.suggest.paths.enabled": true,
 		"[markdown]": {
 			"editor.wordWrap":"on",
+			"editor.rulers": [100],
 			"editor.wordSeparators": "./\\()\"'-:,.;<>~!@# ○$%^&*|+=[]{}`~?．。，、（）「」［］｛｝《》『』【】てにをはがのともへでや",
 			"editor.quickSuggestions": {
 				"other": true,
@@ -27,6 +31,8 @@
 			},
 			"editor.snippetSuggestions": "top",
 			"editor.scrollBeyondLastLine": false,
+			"files.trimTrailingWhitespace": false,
+			"files.insertFinalNewline": true,
 			"editor.padding.bottom": 250,
 		},
 
@@ -38,7 +44,6 @@
 		// Markdown Preview Enhanced
 		"markdown-preview-enhanced.breakOnSingleNewLine": false,
 		"markdown-preview-enhanced.scrollSync": false,
-		"markdown-preview-enhanced.mathRenderingOption": "MathJax",
 		"markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": true,
 	}
 }
