@@ -20,6 +20,8 @@
 		"markdown.updateLinksOnFileMove.enabled": "always",
 		"markdown.validate.enabled": true,
 		"markdown.suggest.paths.enabled": true,
+		"markdown.preview.scrollPreviewWithEditor": false,
+		"markdown.preview.scrollEditorWithPreview": false,
 		"[markdown]": {
 			"editor.wordWrap":"on",
 			"editor.rulers": [100],
