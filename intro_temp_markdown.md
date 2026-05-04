@@ -8,28 +8,34 @@ export_on_save:
   html: true
 ---
 
-# template markdown
+# 環境構築
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
 
-- [template markdown](#template-markdown)
-  - [凡例](#凡例)
+- [環境構築](#環境構築)
+  - [Markdownセットアップ](#markdownセットアップ)
+    - [凡例](#凡例)
     - [スニペット呼び出し](#スニペット呼び出し)
-  - [章立て](#章立て)
-    - [章立て2](#章立て2)
-      - [項](#項)
-  - [画像](#画像)
-    - [画像2](#画像2)
-    - [画像3](#画像3)
+    - [画像](#画像)
+      - [画像1](#画像1)
+      - [画像2](#画像2)
+      - [画像3](#画像3)
+    - [Table](#table)
     - [PlantUML](#plantuml)
     - [Mermaid](#mermaid)
-    - [Table](#table)
 
 <!-- /code_chunk_output -->
 
-## 凡例
+## Markdownセットアップ
+
+markdownによる文書を作成したい場合は、この環境を利用する。  
+
+- 推奨事項に追加してある拡張機能を有効化すること。
+- Markdown Preview Enhancedが有効化されていればFrontmatterにより目次も自動更新される。
+
+### 凡例
 
 本書内での記述例を示す。
 
@@ -63,7 +69,7 @@ export_on_save:
 
 ### スニペット呼び出し
 
-この環境でよく使う prefix は以下。
+この環境で利用できる prefix は以下。
 
 | 用途 | prefix |
 | --- | --- |
@@ -81,28 +87,19 @@ export_on_save:
 | Mermaid flowchart | mdmermaid |
 | Mermaid sequence | mdseq |
 
-## 章立て
+### 画像
 
-markdownによる文書を作成したい場合は、この環境を利用する。  
-
-- 推奨事項に追加してある拡張機能を有効化すること。
-- 上記有効化してあれば、目次も自動更新される。
-
-### 章立て2
-
-#### 項
-
-## 画像
+#### 画像1
 
 ![画像jpg](./img/AdobeStock_489911657.jpeg){.image_w300}
 
-### 画像2
+#### 画像2
 
 ![画像png](./img/AdobeStock_491863380.png)
 
 pngとjpgが張り付けられることは確認した。
 
-### 画像3
+#### 画像3
 
 ![drawio](./img/draw.drawio.png)
 
@@ -113,6 +110,13 @@ pngとjpgが張り付けられることは確認した。
 drawio側を更新してもmarkdown側には即反映ではない？  
 ⇒ プレビューに反映されないだけみたい。html出力には反映された。  
 ⇒⇒ MPEを利用しているなら右上から更新すればいい  
+
+### Table
+
+| No. |  タイトル |
+| --- | --------: |
+| 1   | サンプル1 |
+| 2   | サンプル2 |
 
 ### PlantUML
 
@@ -128,8 +132,6 @@ State1 -> State2
 State2 --> [*]
 @enduml
 ```
-
----
 
 ### Mermaid
 
@@ -155,12 +157,3 @@ sequenceDiagram
   Editor->>Preview: プレビュー更新
   Preview-->>User: 図を表示
 ```
-
----
-
-### Table
-
-| No. |  タイトル |
-| --- | --------: |
-| 1   | サンプル1 |
-| 2   | サンプル2 |
