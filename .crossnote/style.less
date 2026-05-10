@@ -2,6 +2,7 @@
 /* Please visit the URL below for more information: */
 /*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
 
+/* Crossnote プレビュー全体の見た目と独自ブロックの装飾を定義する。 */
 .markdown-preview.markdown-preview {
   background-color: #f0f0f0;
 
@@ -117,7 +118,7 @@
     text-decoration: underline;
   }
 
-  /* 画像を中央に配置する */
+  /* 画像の配置を記法で切り替える。 */
   img[src*='#center'] { 
       display: block;
       margin: auto;
@@ -128,6 +129,13 @@
       float: right;
   }
 
+  /* 固定幅で差し込みたい画像用のユーティリティ。 */
+  .image_w300 {
+    width: 300px;
+    height: auto;
+  }
+
+  /* parser.js で生成する各種 callout の配色をそろえる。 */
   #note,
   div.note,
   pre.note,
@@ -306,6 +314,7 @@
     white-space: inherit;
   }
 
+  /* 各 callout の先頭にラベルを自動付与する。 */
   pre.note::before,
   div.note::before,
   pre[data-info='note']::before {
@@ -376,10 +385,5 @@
     display: inline-block;
     font-weight: bold;
     margin-bottom: 0.2em;
-  }
-
-  .image_w300 {
-    width: 300px;
-    height: auto;
   }
 }

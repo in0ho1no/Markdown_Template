@@ -3,6 +3,7 @@
   // https://shd101wyy.github.io/markdown-preview-enhanced/#/extend-parser
 
   onWillParseMarkdown: async function(markdown) {
+    // Markdown 生テキストを前処理したい場合のフック。
     return markdown;
   },
 
