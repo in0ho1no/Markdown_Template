@@ -47,6 +47,10 @@ markdownによる文書を作成したい場合は、この環境を利用する
 前提知識、仕様、背景などの共有情報を書く。
 :::
 
+:::source
+出典や参照元リンクを書く。
+:::
+
 :::note
 補足メモ、あとで見返したい気付き、雑多な記録を書く。
 :::
@@ -76,6 +80,7 @@ markdownによる文書を作成したい場合は、この環境を利用する
 | Front Matter | mdfront |
 | Tip | mdtip |
 | Info | mdinfo |
+| Source | mdsource |
 | Note | mdnote |
 | Warning | mdwarn |
 | Caution | mdcaution |
