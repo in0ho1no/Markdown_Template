@@ -125,6 +125,23 @@ drawio側を更新してもmarkdown側には即反映ではない？
 
 ### PlantUML
 
+PlantUML は Mermaid と異なり、描画に Java と `plantuml.jar` が必要となる。  
+初回のみ以下を実施する。
+
+:::caution
+Java(JDK/JRE 8 以上, 推奨 11 以上)が前提。`java -version` で導入済みか確認する。
+:::
+
+1. 公式リリースから `plantuml.jar` を入手する。  
+<https://github.com/plantuml/plantuml/releases/latest>
+
+1. 拡張機能と独立した安定パスに配置する。  
+例: `C:/Users/<ユーザ名>/tools/plantuml/plantuml.jar`
+
+1. ワークスペース設定 `markdown-preview-enhanced.plantumlJarPath` を上記パスに向ける。
+
+1. プレビューを更新し、下図が描画されれば導入完了。
+
 ```plantuml
 @startuml
 hide empty description
@@ -137,6 +154,10 @@ State1 -> State2
 State2 --> [*]
 @enduml
 ```
+
+:::info
+未設定でも Mermaid は描画できる。PlantUML ブロックだけがエラー/空表示になる場合は、上記の jar パス設定を見直す。
+:::
 
 ### Mermaid
 
