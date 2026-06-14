@@ -8,8 +8,8 @@ Thumbs.db
 Desktop.ini
 
 # Markdown export artifacts
-/*.html
-/*.pdf
+/**/*.html
+/**/*.pdf
 
 ###############################################################################
 # END TEMPLATE: markdown-template
