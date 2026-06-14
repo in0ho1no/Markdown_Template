@@ -69,6 +69,7 @@
 		// Markdown Preview Enhanced
 		"markdown-preview-enhanced.breakOnSingleNewLine": false,
 		"markdown-preview-enhanced.scrollSync": false,
-		"markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": true,
+		// 自動でプレビュー表示するときに利用する
+		// "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": true,
 	}
 }
