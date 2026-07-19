@@ -64,6 +64,9 @@
 			"files.trimTrailingWhitespace": false,
 			"files.insertFinalNewline": true,
 			"editor.padding.bottom": 250,
+			"editor.codeActionsOnSave": {
+				"source.fixAll.markdownlint": "explicit"
+			}
 		},
 
 		// Markdown Preview Enhanced
