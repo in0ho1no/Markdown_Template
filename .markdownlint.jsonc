@@ -18,10 +18,11 @@
   },
 
   // MD033(インラインHTML禁止): 原則 :::note 等の記法を使うため生HTMLは避けるが、
-  // 表セル内の改行で <br> を使うことがあるので、その要素だけ許可する。
+  // <br> : 表セル内で改行を使うことがあるので、その要素だけ許可する。
+  // <a> : 見出しのIDアンカー(rules/markdown_anchor_rules.md 参照)用に許可する。
   // 他に常用したい要素が出てきたら配列に追記する(例: "sub", "sup")。
   "MD033": {
-    "allowed_elements": ["br"]
+    "allowed_elements": ["br", "a"]
   },
 
   // MD051(リンク断片の整合): 目次は Markdown Preview Enhanced が独自規則で
