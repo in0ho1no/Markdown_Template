@@ -2,4 +2,4 @@
 
 ## Markdownルール
 
-@../.github/copilot-instructions.md
+@../.github/instructions/markdown.instructions.md
