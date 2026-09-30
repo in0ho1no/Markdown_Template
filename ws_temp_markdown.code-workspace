@@ -68,6 +68,9 @@
 				"source.fixAll.markdownlint": "explicit"
 			}
 		},
+		// HTML のサイドバー目次が必要な場合のみ、信頼できる Markdown を扱う環境で有効化する。
+		// コメントアウト時はユーザー設定を継承する。明示的に無効化する場合は false を指定する。
+		// "markdown-preview-enhanced.enableScriptExecution": true,
 
 		// Markdown Preview Enhanced
 		"markdown-preview-enhanced.breakOnSingleNewLine": false,

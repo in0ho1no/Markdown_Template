@@ -3,7 +3,14 @@ html:
   embed_local_images: true
   embed_svg: true
   offline: true
+  # HTML のサイドバー目次が必要な場合は、.code-workspace の
+  # "markdown-preview-enhanced.enableScriptExecution": true のコメントを解除する。
+  # 目次以外のコード実行も許可されるため、信頼できる Markdown のみを扱うこと。
   toc: true
+toc:
+  depth_from: 2
+  depth_to: 6
+  ordered: true
 export_on_save:
   html: true
 ---
